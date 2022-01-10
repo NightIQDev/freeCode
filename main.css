@@ -1,0 +1,268 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Barlow', sans-serif;
+
+}
+
+body{
+	overflow-x: hidden;
+	background-color: #FE8300;
+}
+
+.contenedor{
+	background: url(background.png);
+	padding-bottom:200px;
+	
+}
+
+
+/* BARRA DE NAVEGACION NEVERSIDE */
+
+.list-container{
+	display: flex;
+}
+
+.list{
+	position: relative;
+	margin-left:  20px;
+	margin-top: 15px;
+	left: 60%;
+}
+
+.link{
+	color: white;
+	font-size: 30px;
+	padding: 2px 15px;
+	border-radius: 4px;
+	font-family: 'Oswald', sans-serif;
+}
+
+.link:hover{
+	background-color: #FE8300;
+	color: black;
+	transition: .5s;
+}
+
+.logo{
+	color: white;
+	margin: 15px 0px 0px 45px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px
+}
+
+/* TEXT MIDDLE */
+
+.pcont{
+	margin: 160px 0px 20px 100px;
+	width: 75%;
+}
+
+.title{
+	margin: 0px 0px 30px 0px;
+	color: #FE8300;
+	font-size: 20px;
+}
+
+.subtitle{
+	color: white;
+	font-size: 35px;
+	font-family: 'Oswald', sans-serif;
+}
+
+.textcont{
+	margin: 20px 0px 20px 100px;
+}
+
+.sncont{
+	color: white;
+}
+
+.sn-cont{
+	color: white;
+}
+
+/*BOX DEVELOPER INFORMATION*/
+
+.developer{
+	display: flex;
+	margin: 80px 0px 70px 140px;
+	width: 85%;
+}
+
+.devcont{
+	width: 35%;
+	padding: 10px;
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 0 5px 50px 0 black;
+}
+
+/* BOX CONTAINER DEV*/
+
+.devtitle{
+	color: #FE8300;
+	margin: 15px 0px 10px 0px;
+}
+
+.devsubtitle{
+	margin: 0px 0px 10px 0px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 25px;
+	text-transform: uppercase;
+
+}
+
+.devdescription{
+	margin: 30px 10px 0px 0px;
+}
+
+.video{
+	margin: 20px 20px 20px 0px;
+	box-shadow: 0 0 40px 0 black;
+	z-index: -1;
+}
+
+.godev{
+	color: #FE8300;
+	margin: 50px 0px 0px 0px;
+	cursor: pointer;
+}
+
+.godev:hover{
+	color: black;
+	transition: 0.2s;
+}
+
+.boton{
+	display: none;
+}
+/*------------------------------------------------------MEDIA QUARY RESPONSIVE-----------------------------------------------------------*/
+
+/* Pantalla grande */
+
+@media(max-width: 1920px) and (min-width: 1200px){
+
+	.col-lg-12{width:100%}
+	.col-lg-11{width:91.66666667%}
+	.col-lg-10{width:83.33333333%}
+	.col-lg-9{width:75%}
+	.col-lg-8{width:66.66666667%}
+	.col-lg-7{width:58.33333333%}
+	.col-lg-6{width:50%}
+	.col-lg-5{width:41.66666667%}
+	.col-lg-4{width:33.33333333%}
+	.col-lg-3{width:25%}
+	.col-lg-2{width:16.66666667%}
+	.col-lg-1{width:8.33333333%}
+}
+
+
+
+/* pantalla mediana */
+
+@media(max-width:1199px) and (min-width: 992px){
+
+	.col-md-12{width:100%}
+	.col-md-11{width:91.66666667%}
+	.col-md-10{width:83.33333333%}
+	.col-md-9{width:75%}
+	.col-md-8{width:66.66666667%}
+	.col-md-7{width:58.33333333%}
+	.col-md-6{width:50%}
+	.col-md-5{width:41.66666667%}
+	.col-md-4{width:33.33333333%}
+	.col-md-3{width:25%}
+	.col-md-2{width:16.66666667%}
+	.col-md-1{width:8.33333333%}
+}
+
+/* pantalla tablet */
+
+@media(max-width:991px) and (min-width: 768px){
+
+	.col-sm-12{width:100%}
+	.col-sm-11{width:91.66666667%}
+	.col-sm-10{width:83.33333333%}
+	.col-sm-9{width:75%}
+	.col-sm-8{width:66.66666667%}
+	.col-sm-7{width:58.33333333%}
+	.col-sm-6{width:50%}
+	.col-sm-5{width:41.66666667%}
+	.col-sm-4{width:33.33333333%}
+	.col-sm-3{width:25%}
+	.col-sm-2{width:16.66666667%}
+	.col-sm-1{width:8.33333333%}
+
+}
+
+/* pantalla celular */
+
+@media(max-width:767px){
+
+	.col-xs-12{width:100%}
+	.col-xs-11{width:91.66666667%}
+	.col-xs-10{width:83.33333333%}
+	.col-xs-9{width:75%}
+	.col-xs-8{width:66.66666667%}
+	.col-xs-7{width:58.33333333%}
+	.col-xs-6{width:50%}
+	.col-xs-5{width:41.66666667%}
+	.col-xs-4{width:33.33333333%}
+	.col-xs-3{width:25%}
+	.col-xs-2{width:16.66666667%}
+	.col-xs-1{width:8.33333333%}
+	.boton{
+		color: white;
+		background-color:#FE8300 ;
+		padding: 15px 10px;
+		text-align: center;
+		border-radius: 3px;
+		font-family: 'Oswald', sans-serif;
+		display: block;
+		margin: 30px 0 0 0 ;
+	}
+
+	.list{
+		display: none;
+	}
+
+	.logo{
+		width: 10%;
+	}
+
+	.developer{
+		display: inline-block;
+		margin-left: 60px;
+
+	}
+	.devcont{
+		padding: 50px;
+
+	}
+
+	.video{
+		width: 250px;
+	}
+
+	.pcont{
+		margin-left: 80px;
+	}
+
+	.textcont{
+		margin-left: 80px;
+	}
+}
+
+@media(max-width:379px){
+
+	.developer{
+		display: inline-block;
+		margin-left: 40px;
+
+	}
+
+
+}
